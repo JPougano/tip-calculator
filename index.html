@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');</style>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/scripts.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <img src="./images/logo.svg" alt="splitter icon" class="icon">
+  <main class="container">
+    <section class="flex-column container__input">
+      <div class="flex-column container__input___bill-input">
+        <label for="container__input___amount">Bill</label>
+        <input type="number" id="container__input___amount" >
+      </div>
+      <nav class="container__input___tip-input">
+        <label>Select Tip %</label>
+        <ul class="container__input___nav-tip">
+          <li class="container__input___tip"><h1>5%</h1></li>
+          <li class="container__input___tip"><h1>10%</h1></li>
+          <li class="container__input___tip"><h1>15%</h1></li>
+          <li class="container__input___tip"><h1>25%</h1></li>
+          <li class="container__input___tip"><h1>50%</h1></li>
+          <li class="container__input___custom-tip"><h1>Custom</h1></li>
+        </ul>
+      </nav>
+      <div class="flex-column container__input___qty-people">
+        <label for="container__input___qty">Number of People</label>
+        <input type="number" id="container__input___qty">
+      </div>
+    </section>
+    <section class="flex-column container__output">
+      <div class="flex-row container__output___tip-amount">
+        <ul class="container__output__list">
+          <li>Tip Amount</li>
+          <li>/ person</li>
+        </ul>
+        <h1  id="tip__amount___total" class="container__output___variable-value">$0.00</h1>
+      </div>
+      <div class="flex-row container__output___tip-total">
+        <ul class="container__output__list">
+          <li>Total</li>
+          <li>/ person</li>
+        </ul>
+        <h1 id="tip__amount___total" class="container__output___variable-value">$0.00</h1>
+      </div>
+
+      <h4 class="container__output___button">RESET</h4>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
